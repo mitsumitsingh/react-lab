@@ -1,7 +1,11 @@
-# React SaaS Template
+# React + Material-UI.
 
-Remains of a SaaS business I once tried to build. Now transformed into a template for building an SaaS/admin application using React + Material-UI.
+# To start the project ::
 
-npm install
-npm start
-npm run build
+1. Install the required libraries using below command.
+   npm install
+
+2. And start the application using :
+   npm start
+
+For production build use the command: "npm run build"
