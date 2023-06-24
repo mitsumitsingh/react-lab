@@ -66,7 +66,7 @@ export const reducer = (state, action) => {
 export const fetchEmployees = async (dispatch) => {
   try {
     const response = await axios.get(
-      "https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001"
+      "https://6496d62183d4c69925a32706.mockapi.io/Example/employees"
     );
     const employees = response.data;
 
@@ -86,7 +86,9 @@ export const removeEmployee = async (dispatch, id) => {
   try {
     console.log("Record Deleted" + id);
 
-    await axios.delete(`https://api.example.com/employees/${id}`);
+    await axios.delete(
+      `https://6496d62183d4c69925a32706.mockapi.io/Example/employees/${id}`
+    );
 
     dispatch({
       type: "REMOVE_EMPLOYEE_SUCCESS",
@@ -103,7 +105,7 @@ export const removeEmployee = async (dispatch, id) => {
 export const addEmployee = async (dispatch, employee) => {
   try {
     const response = await axios.post(
-      "https://api.example.com/employees",
+      "https://6496d62183d4c69925a32706.mockapi.io/Example/employees",
       employee
     );
     const newEmployee = response.data;
@@ -121,9 +123,10 @@ export const addEmployee = async (dispatch, employee) => {
 };
 
 export const editEmployee = async (dispatch, employee) => {
+  console.log(employee);
   try {
     await axios.put(
-      `https://api.example.com/employees/${employee.id}`,
+      `https://6496d62183d4c69925a32706.mockapi.io/Example/employees/${employee.id}`,
       employee
     );
 

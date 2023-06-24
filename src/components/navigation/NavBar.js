@@ -73,7 +73,7 @@ function NavBar(props) {
               display="inline"
               color="primary"
             >
-              Ro
+              Su
             </Typography>
             <Typography
               variant="h4"
@@ -81,7 +81,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              hit
+              mit
             </Typography>
           </div>
           <div>

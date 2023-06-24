@@ -3,6 +3,7 @@ import {
   ThemeProvider,
   StyledEngineProvider,
   CssBaseline,
+  Box,
 } from "@mui/material";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import theme from "./theme";
@@ -24,7 +25,9 @@ function App() {
             <Switch>
               <Route>
                 <GlobalProvider>
-                  <Main />
+                  <Box marginTop={8}>
+                    <Main />
+                  </Box>
                 </GlobalProvider>
               </Route>
             </Switch>

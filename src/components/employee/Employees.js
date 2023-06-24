@@ -63,7 +63,7 @@ function Employees(props) {
 
   return (
     <Fragment>
-      <Box justifyContent="center" margin={20}>
+      <Box justifyContent="center" margin={2}>
         <EmployeeListing />
         {employees.length > 0 ? (
           <TableContainer
@@ -92,20 +92,19 @@ function Employees(props) {
                     <TableCell>{employee.id}</TableCell>
                     <TableCell>{employee.name}</TableCell>
                     <TableCell>{employee.gender}</TableCell>
-                    <TableCell>{employee.email_address}</TableCell>
-                    <TableCell>{employee.phone_number}</TableCell>
-                    <TableCell>{employee.days_worked_in_cafe}</TableCell>
-                    <TableCell>{employee.cafe_name}</TableCell>
+                    <TableCell>{employee.email}</TableCell>
+                    <TableCell>{employee.phone}</TableCell>
+                    <TableCell>{employee.daysWorked}</TableCell>
+                    <TableCell>{employee.assignedCafe}</TableCell>
                     <TableCell>
                       <Link
                         to={`/employees/${employee.id}`}
                         className={classes.noDecoration}
                       >
                         <Button
-                          variant="contained"
                           color="primary"
                           size="small"
-                          onClick={() => editEmployee(employee.id)}
+                          onClick={() => editEmployee(employee)}
                           sx={{ borderRadius: "50%", marginRight: "3px" }}
                         >
                           <EditIcon />

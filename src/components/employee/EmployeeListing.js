@@ -5,7 +5,7 @@ import { AddCircle as AddCircleIcon } from "@mui/icons-material";
 
 function EmployeeListing() {
   return (
-    <Box display="flex" alignItems="center" mt={4} mb={2}>
+    <Box display="flex" alignItems="center">
       <Box flex={1} textAlign="left" px={4} py={2} m={2}>
         <Typography variant="h5" color="textPrimary" fontWeight="bold">
           Employee Listing

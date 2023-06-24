@@ -3,9 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./home/Home";
 import Employees from "./employee/Employees";
 import cafes from "./cafe/cafes";
-import { EditEmployee } from "./employee/EditEmployee";
 import { GlobalProvider } from "./../context/GlobalState";
-import { AddEmployee } from "../components/employee/AddEmployee";
+import EditEmployee from "./employee/EditEmployee";
+import AddEmployee from "./employee/AddEmployee";
 
 function Routing(props) {
   return (

@@ -112,10 +112,11 @@ function HeadSection(props) {
                         variant={isWidthUpLg ? "h6" : "body1"}
                         color="textSecondary"
                       >
-                        My Self Rohit Kumar Srivastava. This project is an
-                        assignment. I have used ReactJS and Material UI to build
-                        this project project.
+                        My Self Sumit Kumar Singh. This is a starter project of
+                        React JS. I have used ReactJS and Material UI to build
+                        this project.
                       </Typography>
+                      <br />
                       <div>
                         <Button
                           variant="contained"
@@ -123,7 +124,7 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="githubURL"
+                          href="https://github.com/mitsumitsingh/react-lab"
                         >
                           Download from GitHub
                         </Button>
