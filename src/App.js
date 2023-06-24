@@ -22,15 +22,15 @@ function App() {
           <GlobalStyles />
           <Pace color={theme.palette.primary.light} />
           <Suspense fallback={<Fragment />}>
-            <Switch>
-              <Route>
-                <GlobalProvider>
+            <GlobalProvider>
+              <Switch>
+                <Route>
                   <Box marginTop={8}>
                     <Main />
                   </Box>
-                </GlobalProvider>
-              </Route>
-            </Switch>
+                </Route>
+              </Switch>
+            </GlobalProvider>
           </Suspense>
         </ThemeProvider>
       </StyledEngineProvider>

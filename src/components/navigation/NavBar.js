@@ -56,11 +56,11 @@ function NavBar(props) {
       name: "Employees",
       icon: <BookIcon className="text-white" />,
     },
-    {
-      link: "/cafes",
-      name: "Cafes",
-      icon: <BookIcon className="text-white" />,
-    },
+    // {
+    //   link: "/cafes",
+    //   name: "Cafes",
+    //   icon: <BookIcon className="text-white" />,
+    // },
   ];
   return (
     <div className={classes.root}>
